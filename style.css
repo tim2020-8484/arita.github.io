@@ -1,0 +1,111 @@
+:root {
+    --blue-light: #eaf6ff;
+    --blue-main: #9fd3ff;
+    --blue-dark: #3a8dde;
+    --text-dark: #0b2a4a;
+    --glass: rgba(255, 255, 255, 0.65);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eaf6ff, #cce9ff);
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--blue-dark);
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: var(--blue-dark);
+}
+
+/* Hero */
+.hero {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #9fd3ff, #3a8dde);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(58, 141, 222, 0.4);
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: var(--glass);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--blue-dark);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    opacity: 0.7;
+}
